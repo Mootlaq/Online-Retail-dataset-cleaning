@@ -4,4 +4,4 @@ I was messing with the Online Retail || dataset for analysis purposes but as I w
 
 [Here](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II) is a link of the dataset from the UCI Machine Learning Repository. It provides a good documentation of the dataset. I also provided the csv file of the post-cleaning dataset.
 
-** The post is in the *Data Cleaning* folder.**
+**The post is in the *Data Cleaning* folder.**
