@@ -8,7 +8,7 @@ Another reason why your dataset needs to be clean is if you are planning to fit 
 In this post, we'll go through the cleaning process together and I hope I can show why cleaning is a significant step in your project. 
 
 
-# The Dataset
+## The Dataset
 The dataset contains transactions of an online store that sell gift-ware between 01/12/2009 and 09/12/2011. Customers are wholesalers. The online store is UK-based.
 
 [The dataset](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II) we're gonna work with today contains transactions of an online store that sell gift-ware to wholesalers. The online store is UK-based and the transactions are from 1/12/2009 to 09/12/2011. So we're gonna have a lot of records.
