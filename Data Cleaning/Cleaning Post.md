@@ -50,7 +50,6 @@ The next step is to check the data types of our columns and how many records eac
 df.info()
 ```
 
-the output: 
 ![info](info.png)
 
 The date column is defined as a datetime type as it should be. From the earlier screenshot, The data in the invoice column shows integer values which makes the fact that it's defined as object a bit strange. Although, reading the description of the dataset [here](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II) tells us that the canceled orders contain the letter 'C' in the invoice code. So, even though it didn't appear in the screenshot, some values in the invoice column contain a letter so defining it as an object is correct. It's very important to read the description or the documentation of the dataset. The more you know the less crazy you get while working with your data. 
@@ -62,7 +61,6 @@ Now let's check some stats for the numerical columns.
 df.describe
 ```
 
-The output:
 ![describe](describe.png)
 
 Most of the numbers don't seem to raise our eyebrows. except for two values. If you notice, The minimum of the quantity is a negative value. Same with the price column. What does a negative quantity even mean? The price column not only has negative values but in some records the price zero which doesn't make sense. I don't know about you but this just got interesting. Let's check records where the price is zero first. 
@@ -71,7 +69,6 @@ Most of the numbers don't seem to raise our eyebrows. except for two values. If 
 df[df['Price'] == 0]
 ```
 
-This is part of the output:
 ![pricezero](pricezero.png)
 
 Do you notice something strange? you should! If you check the whole output you'll notice that the description of the products includes words like smashed, damaged, discoloured, thrown away, or lost. So, these are not sales. Probably the person who did the data entry only wanted to document where the products went. Either way, these records can be safely dropped as we're only focusing on sales. 
@@ -122,8 +119,6 @@ It worked!, the minimum quantity is now 1. Although, the price column still has 
 ```
 df_nozeros_nocancel[df_nozeros_nocancel['Price'] < 0]
 ```
-
-The output: 
 
 ![pricelessthanzero](pricelesszero.png)
 
