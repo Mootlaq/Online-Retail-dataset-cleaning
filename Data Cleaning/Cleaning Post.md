@@ -1,4 +1,4 @@
-
+# Data Cleaning
 
 You probably heard before that when a data scientist works on a project, most of the effort usually goes to cleaning and exploring the dataset (we'll get to explore the dataset in another post but in this post, we will focus on cleaning datasets). When I first started learning data science, I took this statement to be true but I didn't think too much about it. Eventually, when I started doing analytics and machine learning modeling, I came to realize how important it is not to start exploring your data or try to gain insight from the numbers until I'm 100% sure the dataset I'm working with is clean. 
 
