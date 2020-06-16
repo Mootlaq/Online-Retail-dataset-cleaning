@@ -44,7 +44,7 @@ Notice that I'm printing the shape of each dataframe so that we make sure the co
 - The concatenated dataframe had 1067371 records and 8 columns which tell us our concatenation is successful.
 
 Now, let's print the rows in the dataset to get a sense of it.
-![head](head.PNG)
+![head](/head.PNG)
 
 As we can see, the columns are easy to interpret. each row explains a transaction or a part of it. We have an invoice code of each transaction, the stock code of the product, a description of the product, the quantity ordered, the date and time of the transaction, the price of the product, the customer ID, and the country of the customer. 
 The next step is to check the data types of our columns and how many records each has. Sometimes, Pandas defines columns with an incorrect data type like defining a date type column as a string.
